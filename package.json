@@ -9,6 +9,7 @@
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.4.0",
     "eslint-plugin-react-hooks": "^5.0.0-canary-1cea38448-20230530",
     "formik": "^2.4.2",
     "notiflix": "^3.2.6",

@@ -1,24 +1,14 @@
-import { createSlice } from '@reduxjs/toolkit';
-
-const initialState = { inputValue: '' };
+import { createSlice } from '@reduxjs/toolkit'; // це замінює всю роботу з actionTypes, actionCreator, reducer
 
 const filterSlice = createSlice({
   name: 'filter',
-  initialState: initialState,
+  initialState: '',
   reducers: {
-    setContactsFilter: {
-      reducer: (state, action) => {
-        state.inputValue = action.payload;
-      },
-
-      prepare: inputValue => {
-        return {
-          payload: inputValue,
-        };
-      },
+    setFilter: (_state, action) => {
+      return action.payload;
     },
   },
 });
 
-export const { setContactsFilter } = filterSlice.actions;
+export const { setFilter } = filterSlice.actions;
 export const filterReducer = filterSlice.reducer;
