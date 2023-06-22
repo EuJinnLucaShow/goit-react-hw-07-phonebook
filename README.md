@@ -20,7 +20,7 @@
 Створи ресурс `contacts`, щоб отримати ендпоінт `/contacts`. Використовуй
 конструктор ресурсу та опиши об'єкт контакту як на ілюстрації.
 
-<img src="[./resource.png](https://github.com/goitacademy/react-homework/blob/master/homework-07/resource.png)" alt="Contact schema" with="400" />
+<img src="https://github.com/goitacademy/react-homework/blob/master/homework-07/resource.png" alt="Contact schema" with="400" />
 
 Використовуй функцію
 [createAsyncThunk](https://redux-toolkit.js.org/api/createAsyncThunk) або
