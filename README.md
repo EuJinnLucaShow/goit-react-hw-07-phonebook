@@ -25,14 +25,16 @@
 Форма стану
 Додай у стан Redux обробку індикатора завантаження та помилки. Для цього зміни форму стану.
 
-`{
+```html
+{
   contacts: {
     items: [],
     isLoading: false,
     error: null
   },
   filter: ""
-}`
+}
+```
 
 Операції
 Використовуй функцію [createAsyncThunk](https://redux-toolkit.js.org/api/createAsyncThunk) для оголошення асинхронних генераторів екшенів та виконання HTTP-запитів. Обробку екшенів та зміну даних у стані Redux зроби за допомогою [createSlice](https://redux-toolkit.js.org/api/createSlice).
