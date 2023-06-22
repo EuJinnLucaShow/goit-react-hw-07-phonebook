@@ -22,7 +22,23 @@
 
 <img src="https://github.com/goitacademy/react-homework/blob/master/homework-07/resource.png" alt="Contact schema" with="400" />
 
-Використовуй функцію
-[createAsyncThunk](https://redux-toolkit.js.org/api/createAsyncThunk) або
-[RTK Query](https://redux-toolkit.js.org/rtk-query/overview) для взаємодії з
-бекендом та асинхронними запитами.
+Форма стану
+Додай у стан Redux обробку індикатора завантаження та помилки. Для цього зміни форму стану.
+
+`{
+  contacts: {
+    items: [],
+    isLoading: false,
+    error: null
+  },
+  filter: ""
+}`
+
+Операції
+Використовуй функцію [createAsyncThunk](https://redux-toolkit.js.org/api/createAsyncThunk) для оголошення асинхронних генераторів екшенів та виконання HTTP-запитів. Обробку екшенів та зміну даних у стані Redux зроби за допомогою [createSlice](https://redux-toolkit.js.org/api/createSlice).
+
+Оголоси наступні операції:
+
+- `fetchContacts` - одержання масиву контактів (метод GET) запитом. Базовий тип екшену `"contacts/fetchAll"`.
+- `addContact` - додавання контакту (метод POST). Базовий тип екшену `"contacts/addContact"`.
+- `deleteContact` - видалення контакту (метод DELETE). Базовий тип екшену `"contacts/deleteContact"`.
