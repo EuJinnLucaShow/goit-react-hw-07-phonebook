@@ -66,6 +66,7 @@ const ContactForm = () => {
       <Input
         type="text"
         name="name"
+        placeholder="Enter name"
         value={name}
         onChange={handleNameChange}
         pattern="^[a-zA-Zа-яА-Я]+([' \-][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*$"
@@ -77,6 +78,7 @@ const ContactForm = () => {
       <Input
         type="tel"
         name="number"
+        placeholder="Enter phone number"
         value={number}
         onChange={handleNumberChange}
         phonePattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
