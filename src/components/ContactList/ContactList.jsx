@@ -18,6 +18,9 @@ function ContactList() {
       {filteredContacts.map(({ id, name, number }) => (
         <ContactItem key={id} contact={{ id, name, number }} />
       ))}
+      {filteredContacts.length === 0 && (
+        <p>The Phonebook is empty. Add your first contact. 🫤</p>
+      )}
     </ul>
   );
 }
